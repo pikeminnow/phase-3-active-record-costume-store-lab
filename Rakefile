@@ -9,3 +9,11 @@ task :console do
   # Open a Pry session
   Pry.start
 end
+namespace :db do
+  desc 'migrate changes to your database'
+  task migrate: :environment do
+    # Costume.create_table
+    # CostumeStore.create_table
+    # HauntedHouse.create_table
+  end
+end
